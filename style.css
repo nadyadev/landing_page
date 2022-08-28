@@ -1,5 +1,5 @@
 body{
-    font-family:'Courier New', Courier, monospace;
+    font-family:Arial, Helvetica, sans-serif
 }
 .header .left-links{
     font-size: 24px;
@@ -17,7 +17,9 @@ a {
 .title{
     font-size:48px;
     font-weight:bolder;
-    color:#F9FAF8
+    color:#F9FAF8;
+    margin-bottom:20px;
+    
 }
 
 ul {
@@ -30,30 +32,45 @@ ul {
 
 .footer{
     background-color: #1f2937;
+    text-align: center;
+    height:50px;
 }
 
-.about {
+.first {
     background-color: #1f2937;
 }
 .placeholder{
     background-color: grey;
     color:#F9FAF8;
+    margin:20px;
 }
 
 .title2{
     font-size:36px;
     font-weight: bolder;
-    color: #1f2937
+    color: #1f2937;
+    margin-bottom:70px;
+    
+    
 
 }
+
+
+
 .desc{
-    color:#e5e7eb
+    color:#e5e7eb;
+    margin-bottom:20px;
+    
+   
 }
 .sign-up{
-    border-radius: 5px;
+    border-radius: 10px;
     background-color: #3882f6;
     color:#F9FAF8;
-    border:solid 2px #e5e7eb
+    border:solid 3px #e5e7eb;
+    font-size:20px;
+    padding:10px;
+    
     
 }
 
@@ -99,3 +116,102 @@ ul {
 }
 /* flex-box section*/
 
+body {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding:20px;
+    align-items:center;
+    
+}
+
+  ul{
+    display:flex;
+    flex-direction:row;
+    gap: 30px;
+    margin-right:50px;
+}
+
+.left-links{
+    margin-left:50px;
+}
+
+.first{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    height:500px;
+}
+
+.about{
+    width:500px;
+    
+}
+.placeholder{
+    display:flex;
+    height:300px;
+    width:600px;
+    align-items: center;
+    justify-content: center;
+}
+
+.container2{
+    display:flex;
+    text-align: center;
+    margin-bottom:80px;
+    
+    
+}
+
+.second{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    padding:100px;
+    text-align:center;
+   
+}
+/* figure out how to align the text please, maybe you can add img instead and align*/
+.item{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+   text-align: center;
+    margin:45px;
+    gap:10px;
+}
+
+.third{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:400px;
+
+}
+.author{
+    display:flex;
+    justify-content: right;
+    font-weight:bold;
+
+}
+.fourth{
+    padding:100px;
+}
+.sign-box{
+    display:flex;
+    justify-content: space-around;
+    height:100px;
+    align-items: center;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
